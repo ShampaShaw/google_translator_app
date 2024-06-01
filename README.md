@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Google Translation App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Google Translation App](https://your-image-link.com)
 
-## Available Scripts
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [Technologies Used](#technologies-used)
 
-In the project directory, you can run:
+## Description
+The Google Translation App is a web-based application that allows users to translate text from one language to another using the LibreTranslate API. The app also includes features for speech recognition and text-to-speech, enhancing user interaction by allowing users to speak the input text and listen to the translated output.
 
-### `npm start`
+## Features
+- Translate text between multiple languages
+- Speech recognition to input text via microphone
+- Text-to-speech to hear the translated text
+- Responsive design for use on various devices
+- Error handling and rate limit notifications
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/google-translation-app.git
+    cd google-translation-app
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-### `npm test`
+3. Create a `.env` file in the root directory and add your API key:
+    ```env
+    REACT_APP_API_KEY=your_api_key
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Start the development server:
+    ```bash
+    npm start
+    ```
 
-### `npm run build`
+## Usage
+1. Select the source and target languages from the dropdown menus.
+2. Enter the text you want to translate in the input area.
+3. Click the "Translate" button to get the translation.
+4. Use the "Speak" button to use speech recognition for input.
+5. Click the speaker icon to hear the translated text.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## File Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+google-translation-app/
+├── public/
+├── src/
+│ ├── components/
+│ │ └── Body.jsx
+│ ├── App.css
+│ ├── App.js
+│ ├── index.css
+│ ├── index.js
+├── .gitignore
+├── README.md
+├── package-lock.json
+├── package.json
+├── tailwind.config.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
+- **React**: A JavaScript library for building user interfaces
+- **Axios**: Promise-based HTTP client for the browser and Node.js
+- **LibreTranslate API**: Free and Open Source Machine Translation API
+- **Web Speech API**: Interface for speech recognition and synthesis
+- **CSS**: For styling the application
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ by [Shampa Shaw](https://github.com/ShampaShaw)
